@@ -1,0 +1,17 @@
+<div class="country_card">
+    <div class="counrty_name">{{name}}</div>
+    <div class="descr_block">
+        <ul class="descr">
+            <li class="descr_item"><span class="span">Capital: </span>{{ capital}}</li>
+            <li class="descr_item"><span class="span">Population: </span>{{ population}}</li>
+            <li class="descr_item"><span class="span">Languages: </span>
+                <ul>
+                    {{#each languages}}
+                    <li>{{this.name}}</li>
+                    {{/each}}
+                </ul>
+            </li>
+        </ul>
+        <div><img src="{{flag}}" alt="Country Flag" class="flag_image"></div>
+    </div>
+</div>
